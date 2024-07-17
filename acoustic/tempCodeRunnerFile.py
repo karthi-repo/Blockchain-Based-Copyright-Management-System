@@ -1,0 +1,1 @@
+1.0 - error / 32.0 / min(len(raw_fp2), len(raw_fp3))

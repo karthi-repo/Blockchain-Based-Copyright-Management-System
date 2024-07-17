@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.3/dist/loadingoverlay.min.js"></script>
+    <link href="../static/blockchain.css" rel="stylesheet">
+    <script src="../static/blockchain.js"></script>
+    <title>Blockrock</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="nav">
+        <div class="row justify-content-center" style="margin-left: -60px; padding-top: 30px;padding-bottom: 20px;">
+            <ul class="nav_items">
+                <li class="nav_item">
+                  <!-- <a href="/" class="nav_link" style="text-decoration: none;">Home</a> -->
+                  <a href="/upfile" class="nav_link" style="text-decoration: none;">Home</a>
+                  <a href="/faq" class="nav_link" style="text-decoration: none;">Services</a>
+                  <a href="/about" class="nav_link" style="text-decoration: none;">About us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container d-flex flex-column">
+        <div class="row">
+            <div class="col">
+                <center>
+                    <h1 style = "color: rgb(246, 246, 246); font-size: 3em; margin-top: 15px; margin-bottom: 15px;">BlockChain</h1>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h4 class="text-white">Filters:
+                    <a href="#" onclick="handleFilter(event, 'text')"><i id="btnTextFilter"  class="filterbutton far fa-file-word ml-2 mr-2 "></i></a>
+                    <a href="#" onclick="handleFilter(event, 'image')"><i id="btnImageFilter" class="filterbutton far fa-images mr-2 "></i></a>
+                    <a href="#" onclick="handleFilter(event, 'audio')"><i id="btnAudioFilter" class="filterbutton far fa-file-audio"></i></a>
+                </h4> 
+            </div>
+        </div>
+        <div class="row w-100" id="blur_bg" style="margin-bottom: 20px;">
+            <div class="col">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="bg-light rounded">
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Genre</th>
+                            <th scope="col">Previous Hash</th>
+                            <th scope="col">Timestamp</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="blockchainBody" class="text-white">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailsModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6" id="detailsModalBodyLeft">
+
+                            </div>
+                            <div class="col-6" id="detailsModalBodyRight">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body{
+    background-image: url("login.svg");
+    background-size: cover;
+    background-position: center;
+}
+.blur_bg{
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 10px 10px 30px rgba(3, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav,
+  .nav_item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav_logo,
+  .nav_link,
+  .button {
+    color: #fff;
+  }
+  .nav_logo {
+    font-size: 30px;
+  }
+  .nav_logo:hover {
+      color:  #d9d9d9;;
+  }
+  .nav_item {
+    column-gap: 25px;
+  }
+  .nav_link:hover {
+    color: #d9d9d9;
+  }

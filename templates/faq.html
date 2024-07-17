@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.3/dist/loadingoverlay.min.js"></script>
+    <link href="../static/aboutus.css" rel="stylesheet">
+    <title>BlockRock</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="nav">
+        <div class="row justify-content-center" style="margin-left: -60px; padding-top: 30px;padding-bottom: 20px;">
+            <ul class="nav_items">
+                <li class="nav_item">
+                  <a href="/" class="nav_link" style="text-decoration: none; pointer-events: none;">Home</a>
+                  <a href="/blockchain" class="nav_link" style="text-decoration: none;">Blockchain</a>
+                  <a href="/about" class="nav_link" style="text-decoration: none;">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container d-flex flex-column">
+        <div class="row">
+            <div class="col">
+                <center>
+                    <h1 style = "color: rgb(255, 255, 255); font-size: 3em; margin-top: 15px; margin-bottom: 15px;">Frequently Asked Questions</h1>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="blur_bg" style="margin-top: 30px; padding: 10px 30px; margin-bottom: 30px;">
+                    <h3 class="mt-2" style="color: rgb(166, 255, 255);">What is BlockRock?</h3>
+                    <div class="dropdown-divider"></div>
+                    <p style="color: rgb(248, 255, 255);">BlockRock is a proof of concept project for blockchain based digital copyright protection. Users can upload media files that they create and permanently 
+                        claim ownership of their work. Anyone on the web can view the published works and verify that the author is correct. Further, it is not possible to 
+                        upload a work that is too similar to one that has already been published. Audio, image, and text files are currently supported.</p>
+                </div>
+                <div class="blur_bg"style="padding: 10px 30px; margin-bottom: 30px;">
+                    <h3 class="mt-2" style="color: rgb(166, 255, 255);">How it Works?</h3>
+                    <div class="dropdown-divider"></div>
+                    <p style="color: rgb(248, 255, 255);">Whenever a user uploads a file, a new block is added to the blockchain. This block contains the title and author of the work, a path/link to download the 
+                        file, a hash of the file, the public key of the author, the timestamp, and the hash of the previous block. A hash of the file is used instead of the raw 
+                        data to keep block sizes smaller. The public key of the author is included so that knowledge of the corresponding secret key allows the author to prove 
+                        ownership. Like any blockchain, the hash of the previous block allows users to verify that the chain has not been tampered with.</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
